@@ -1,23 +1,23 @@
 apiVersion: apps/v1 #version of the Kubernetes API you're using to create this object
 kind: Deployment  #What kind of object you want to create
 metadata: #deployment name, helps uniquely identify the object
-   name: hotelbooking
+   name: hotelbookingms
 
 spec:  
   selector:
     matchLabels:
-      app: hotelbooking 
+      app: hotelbookingms 
 
 
   replicas: 1 # tells deployment to run 1 pods matching the template
   template:
     metadata:
       labels:
-        app: hotelbooking
+        app: hotelbookingms
     spec:   #What state you desire for the object
 
       containers:
-      - name: hotelbooking #container name
-        image: 'meenakshisornasundaram/hotelbooking:v2' #image name
+      - name: hotelbookingms #container name
+        image: 'meenakshisornasundaram/hotelbooking:v1' #image name
         ports:
-        - containerPort: 8080 # demo runs on port 8484
+        - containerPort: 8011 # demo runs on port 8484

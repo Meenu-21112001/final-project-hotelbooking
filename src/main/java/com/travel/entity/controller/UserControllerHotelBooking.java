@@ -26,7 +26,7 @@ public class UserControllerHotelBooking {
 		System.out.println("\n---------------Inside User Constructor-------------------- \n" + this);
 	}
 
-	@GetMapping("/welcome")
+	@GetMapping("/welcome")// /user/bookhotel/welcome
 	public String welcome() {
 		return "Welcome To Hotel Booking Dear Users!!";
 	}

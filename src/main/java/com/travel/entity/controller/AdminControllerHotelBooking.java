@@ -36,7 +36,7 @@ public class AdminControllerHotelBooking {
 		System.out.println("\n---------------Inside Constructor-------------------- \n" + this);
 	}
 
-	@GetMapping("/welcome")
+	@GetMapping("/welcome")///admin/bookhotel/welcome
 	public String welcome() {
 		return "Admin !welcome to HotelBooking";
 	}
